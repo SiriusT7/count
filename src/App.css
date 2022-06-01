@@ -1,3 +1,11 @@
+.disable-textselect,.App {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
 .App {
   text-align: center;
 }
@@ -39,4 +47,15 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+h1{
+  font-size: 100px;
+  padding: 100px 150px;
+  cursor: pointer;
+  transition: font-size .1s;
+}
+
+h1:active{
+  font-size: 110px;
 }
